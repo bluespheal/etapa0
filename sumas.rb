@@ -6,7 +6,7 @@ p suma == resta
 var1 = 20
 var2 = 10
 
-resta = 15 - 0.5
+resta = var1/(var1/var2) + (var1/var2)*(var1/var2) + (var2/var1.to_f)
 multiplicacion = resta * var1 + var2
 division = multiplicacion / 3
 p division == 100

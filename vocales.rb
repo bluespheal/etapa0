@@ -1,5 +1,6 @@
 def vowels(string)
   string.downcase.count ("aeiou")
+  
 end
 
 p vowels("hello") == 2

@@ -1,4 +1,4 @@
-name = "jUan"
+name = "juan"
 age = 21
 
 if name.capitalize == "Juan" && age >= 18
