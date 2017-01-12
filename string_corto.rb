@@ -5,7 +5,7 @@ def shortest(array)
 
    array.each do |x|
     if x.length == arr
-       array2.push(x+20)
+       array2.push(x)
        
     end
 
