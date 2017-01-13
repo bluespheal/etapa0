@@ -2,9 +2,12 @@ def anagrams(array)
   arr=[]
   f_arr= []
   
+  arr << x.split("").sort.join
+  
   array.each {|x| 
-    arr << x.split("").sort.join
+    
   } 
+
   arr.uniq.each {|a|
     f_arr1= []
     array.each { |b|
