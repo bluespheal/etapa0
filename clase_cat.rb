@@ -21,12 +21,10 @@ class Cat
 
 end
 
-
-#test
-
 cat_1 = Cat.new("Oliver")
 cat_5 = Cat.new("Garfield")
 
+#test
 
 cat_3 = Cat.new("catty")
 

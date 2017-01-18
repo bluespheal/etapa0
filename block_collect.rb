@@ -1,7 +1,6 @@
 def numbers(list)
   list.collect do |num|
-    num * 2
-    num
+    num * 2/2
   end
 end
 

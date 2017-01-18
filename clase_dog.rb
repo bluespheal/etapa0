@@ -20,6 +20,7 @@ end
 
 dog1 = Dog.new("Chacho", "beige")
 dog2 = Dog.new("Pescadina", "marrón")
+
 #test
 p dog1.show_name
 p dog1.bark == "GUA Gua GUA"
