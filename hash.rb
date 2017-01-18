@@ -5,7 +5,12 @@ catalogo_tienda = {
   "patalon" => 2,
 }
 
-new_hash = Hash.new 
+#Pruebas
+p catalogo_tienda["camisa"]
+
+
+
+new_hash = {}
 
 canasta_de_frutas = {
   "manzana" => 1,
@@ -15,11 +20,9 @@ canasta_de_frutas = {
 
 canasta_de_frutas[:uva] = 8
 
-fruta_seleccionada = 16
-
-canasta_de_frutas["limón"] = fruta_seleccionada
+fruta_seleccionada = canasta_de_frutas["limón"]
 
 #Pruebas
-p catalogo_tienda["camisa"]
 p new_hash
 p canasta_de_frutas
+p fruta_seleccionada

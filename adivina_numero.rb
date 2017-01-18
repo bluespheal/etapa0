@@ -5,7 +5,7 @@ class NumberGuessingGame
   def initialize  
   end
 
-  def guess(adivina)
+  def guess(adivina = 0)
     adivina = (gets.chomp).to_i
     win = false
     retr = true
@@ -16,7 +16,6 @@ class NumberGuessingGame
         p "Too low" 
         win = false
         adivina = (gets.chomp).to_i
-
 
       elsif @@numero < adivina
         p "Too high"
@@ -38,15 +37,11 @@ class NumberGuessingGame
         elsif answer == "n"
           retr = false
         end
-
       end
     end
-  
   end
-
 end
 
 game = NumberGuessingGame.new
 
-p game.guess(0) 
-
+p game.guess

@@ -1,5 +1,5 @@
 class Window
-  attr_accessor :color
+  attr_reader :color
   attr_accessor :size
 
   def initialize(color, size)
