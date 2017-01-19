@@ -2,7 +2,7 @@ class Cat
   CAT_YEARS = 7
 
   def initialize(age)
-    @age = age
+    @age = age * CAT_YEARS
   end 
 
   def es_mayor_que?(other_cat)
@@ -11,7 +11,7 @@ class Cat
 
   protected 
   def protected
-    @age * CAT_YEARS
+    @age 
   end
 
   private

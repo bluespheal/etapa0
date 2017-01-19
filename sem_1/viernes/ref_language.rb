@@ -24,20 +24,9 @@ def language(speak)
 end
 =end
 
-def language(speak)
-  case speak
-  when speak = "JavaScript" then "I like #{speak}"
-  when speak = "CSS" then "I like CSS"
-  when speak = "Python" then "I like Python"
-  when speak = "R" then "I like R"
-  when speak = "C++" then "I like C++"
-  when speak = "Unity" then "I like Unity"
-  when speak = "Ruby" then "I like Ruby"
-  when speak = "Ruby on Rails" then "I like Ruby on Rails"
-  when speak = "Java" then "I like Java"
-  else
-    "I don't like to code"
-  end 
+def language(speak, answer = "I like #{speak}")
+  language = ["JavaScript", "CSS", "Python", "R", "C++", "Unity", "Ruby", "Ruby on Rails", "Java"]
+  language.include?(speak) ? answer : "I don't like to code"
 end
 
 #test

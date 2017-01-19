@@ -1,11 +1,14 @@
 class Asignature
   def initialize
   end
+
   public
   def math
-    true
+    "Mathematics"
   end
 end
 
 asignature = Asignature.new
-p asignature.math 
+
+p asignature.math == "Mathematics"
+#=>true

@@ -1,7 +1,9 @@
+require 'date'
+
 class Person
   def initialize(nombre, edad)
     @nombre = nombre
-    @edad = edad
+    @edad = Date.today.year - edad
   end
 
   def age
@@ -17,10 +19,10 @@ class Person
 
 end
 
-carlos = Person.new("carlos", 30)
-martha = Person.new("martha", 26)
+carlos = Person.new("carlos", 1987)
+martha = Person.new("martha", 1991)
 
-p carlos.age
+
 
 #test
 p carlos.age == "Carlos is 30 years old."
