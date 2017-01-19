@@ -1,7 +1,7 @@
 include Math
 def dudeney_number?(number)
   total = 0
-  number.to_s.chars.map {|sum| total = total+ sum.to_i}
+  number.to_s.chars{|sum| total = total + sum.to_i}
   total == cbrt(number) ? true : false 
 end
 

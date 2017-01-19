@@ -1,5 +1,5 @@
 def odd_indexed(arr)  
-  arr.select {|x| (arr.rindex(x)+1) % 2 != 0}.map {|i| i}
+  arr.select {|x| (arr.index(x)+1) % 2 != 0}.map {|i| i}
 end
 
 def long_strings(arr)
@@ -7,12 +7,11 @@ def long_strings(arr)
 end
 
 def start_with_h(arr)
-  arr = arr.select {|x|  x.split("").first == "h"}.map {|i| i}
-  arr.join
+  arr = arr.select {|x| x.split("").first == "h"}.map {|i| i}.join
 end
 
 def capitalize_array(arr)
-  arr.select {|x| x.split("")}.map {|i| i.capitalize}
+  arr.map {|i| i.capitalize}
 end
 
 def group_by_starting_letter(arr)

@@ -6,11 +6,7 @@ end
 
 class B < A
   def b(a)
-    if a == 5
-      'B.b'
-    else
-      super
-    end
+    a == 5 ? 'B.b' : super
   end
 end
 

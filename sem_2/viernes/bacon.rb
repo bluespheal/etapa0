@@ -28,14 +28,9 @@ def baconian_cipher (code)
 
   array = code.scan(/.{5}/)
   final =[]
-
-  array = array.map {|block| hash.each {|x,y|
-    if block == x
-      final << y 
-    end
-    }}
-
-  p final.join
+  array = array.map {|block| hash.each {|x,y| final << y if block == x}}
+  final.join
+  
 end
 
 # Pruebas

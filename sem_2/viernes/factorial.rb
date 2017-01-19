@@ -1,12 +1,6 @@
 def factorial(number)
   total = 1
-  (1..number).map {|n| 
-    if n != 0 
-      total = total*n
-    else
-      total
-    end
-    }
+  (1..number).map {|n| n != 0 ? total = total*n : total}
   total
 end
 
