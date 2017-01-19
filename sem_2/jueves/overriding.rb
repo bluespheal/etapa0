@@ -14,7 +14,6 @@ class Animal
 
 end
 
-
 class Dog < Animal; end
 
 class Cat < Animal; end
@@ -26,6 +25,3 @@ p drako.speak == "Drako say Guau!"
 # => true
 p peto.speak == "Hello!"           
 # => true
-
-p drako.speak
-p peto.speak

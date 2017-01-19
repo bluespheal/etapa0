@@ -26,7 +26,7 @@ end
 
 def language(speak)
   case speak
-  when speak = "JavaScript" then "I like JavaScript"
+  when speak = "JavaScript" then "I like #{speak}"
   when speak = "CSS" then "I like CSS"
   when speak = "Python" then "I like Python"
   when speak = "R" then "I like R"

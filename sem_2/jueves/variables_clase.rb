@@ -26,5 +26,3 @@ bus_1 = Bus.new
 
 p Car.number_of_vehicles == "This Superclass has created 3 vehicles"
 # => true
-
-p Car.number_of_vehicles
